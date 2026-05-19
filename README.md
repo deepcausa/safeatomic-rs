@@ -1,5 +1,9 @@
 # safeatomic-rs
 
+[![Crates.io](https://img.shields.io/crates/v/safeatomic-rs.svg)](https://crates.io/crates/safeatomic-rs)
+[![Docs.rs](https://docs.rs/safeatomic-rs/badge.svg)](https://docs.rs/safeatomic-rs)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
+
 Atomic POSIX filesystem primitives for Rust. Sibling of the Python
 [`safeatomic`](https://pypi.org/project/safeatomic/) package.
 
