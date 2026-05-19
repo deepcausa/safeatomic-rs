@@ -33,12 +33,19 @@ use safeatomic_rs::{
   crate; this one is lock-free today.
 - **Not portable to non-POSIX targets.** Linux/macOS/BSD assumptions.
 
-## Relationship to Python `safeatomic`
+## Related projects
 
-`safeatomic-rs` is the Rust sibling of the Python `safeatomic` package.
-The two share intent and surface (same six primitives, same guarantees on
-POSIX) but the Rust side stands on its own — it is not a binding, not an
-FFI wrapper.
+- [`safeatomic`](https://github.com/deepcausa/safeatomic) — Python package
+  for plain-file persistence with explicit guarantees, runtime diagnostics,
+  checksums, cooperative locks, and small TLA+ protocol models.
+- [`datawal`](https://github.com/deepcausa/datawal) — Rust record store that
+  uses filesystem primitives in the same spirit: framed append-only records,
+  recovery, a bytes-based KV projection, tombstones, compaction, and clean
+  export.
+
+`safeatomic-rs` is the Rust sibling of `safeatomic`, not a binding and not
+an API mirror. It provides low-level filesystem primitives that can be used
+by higher-level crates such as `datawal`.
 
 ## Status
 
