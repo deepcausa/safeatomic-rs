@@ -3,6 +3,8 @@
 Atomic POSIX filesystem primitives for Rust. Sibling of the Python
 [`safeatomic`](https://pypi.org/project/safeatomic/) package.
 
+**MSRV:** Rust 1.75.0
+
 `safeatomic-rs` is a small, focused crate: it provides the low-level
 operations needed to write configs, manifests, checkpoints, segments, and
 similar files **safely** on a local POSIX/Linux filesystem.
