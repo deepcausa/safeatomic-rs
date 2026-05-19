@@ -1,0 +1,12 @@
+[package]
+name = "safeatomic-rs"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+rust-version = "1.75"
+description = "Atomic POSIX filesystem primitives: write_atomic, write_once, append+fsync, rename, fsync_dir. Rust sibling of the Python `safeatomic` package."
+repository = ""
+readme = "README.md"
+
+[dependencies]
+anyhow = "1"
