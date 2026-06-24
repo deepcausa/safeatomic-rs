@@ -33,7 +33,7 @@ use safeatomic_rs::{
 
 - **Not a write-ahead log.** `write_append_fsync` is a primitive. It does
   not provide record framing, checksums, or recovery semantics. For framed
-  append-only logs see [`datawal`](../datawal/).
+  append-only logs see [`datawal`](https://github.com/deepcausa/datawal).
 - **Not a database.** No keys, no indices, no transactions.
 - **Not a file-locking library.** Advisory locks may land in a follow-up
   crate; this one is lock-free today.
